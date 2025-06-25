@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <form>
+        <fieldset>
+            <legend>Basic Info</legend>
+        <!-- Text input with name, value, placeholder, required, pattern, maxlength, size -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="JohnDoe123" placeholder="Enter username" required
+            pattern="[A-Za-z0-9]{5,}" maxlength="15" size="20">
+        <br><br>
+
+        <!-- Readonly text field -->
+        <label for="readonly-field">Readonly Field:</label>
+        <input type="text" id="readonly-field" value="This cannot be changed" readonly>
+        <br><br>
+
+        <!-- Disabled input -->
+        <label for="disabled-field">Disabled Field:</label>
+        <input type="text" id="disabled-field" value="Disabled Input" disabled>
+        <br><br>
+
+        <!-- Number input with min, max, step -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" step="1" required>
+        <br><br>
+
+        <!-- Checkbox with checked -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes" checked>
+        <br><br>
+
+        <!-- File input with multiple -->
+        <label for="resume">Upload Resume(s):</label>
+        <input type="file" id="resume" name="resume" multiple accept="=.pdf,.jpg">
+        </fieldset>
+        <br>
+<fieldset>
+    <legend>Message</legend>
+        <textarea name="message" id="message" rows="5" cols="30" placeholder="Enter your message"></textarea>
+<br>
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <br>
+    <fieldset>
+        <legend>Country</legend>
+    <label for="country">Select Country <span class="note">(required)</span></label>
+        <select name="country" id="country" required size="3">
+            <option value="">-- Choose --</option>
+            <option value="in" selected>India</option>
+            <option value="us">USA</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+        </select>
+        <br><br>
+         <label for="browser">Choose Your Favorite Browser:</label>
+            <input list="browsers" id="browser" name="browser" placeholder="Type or choose..." />
+
+            <datalist id="browsers">
+                <option value="Google Chrome">
+                <option value="Mozilla Firefox">
+                <option value="Safari">
+                <option value="Microsoft Edge">
+                <option value="Opera">
+                <option value="Brave">
+                <option value="Vivaldi">
+            </datalist>
+
+        </fieldset>
+</body>
+</html>
