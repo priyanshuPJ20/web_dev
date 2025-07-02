@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>5 Black Boxes with Adjusted Positioned Box</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;  /* horizontal centering */
+      align-items: center;      /* vertical centering */
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* space between boxes */
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+    }
+
+    /* Relative positioning on 3rd box */
+    .box:nth-child(3) {
+      position: relative;
+      top: -60px;   /* move up more */
+      left: -60px;  /* move more to left */
+       background-color: rgb(221, 18, 18);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box" ></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>

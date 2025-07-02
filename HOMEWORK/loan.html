@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan EMI Calculator Form</title>
+</head>
+<body>
+
+  <h2>Loan EMI Calculator</h2>
+
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="loanAmount">Loan Amount (₹):</label><br>
+    <input type="number" id="loanAmount" name="loanAmount" required><br><br>
+
+    <label for="interestRate">Interest Rate (% per annum):</label><br>
+    <input type="number" id="interestRate" name="interestRate" step="0.01" required><br><br>
+
+    <label for="tenure">Loan Tenure:</label><br>
+    <input type="number" id="tenure" name="tenure" required><br><br>
+
+    <label for="tenureType">Tenure Type:</label><br>
+    <select id="tenureType" name="tenureType">
+      <option value="months">Months</option>
+      <option value="years">Years</option>
+    </select><br><br>
+
+    <input type="submit" value="Calculate EMI">
+  </form>
+
+</body>
+</html>

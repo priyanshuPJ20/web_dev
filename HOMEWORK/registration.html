@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration Form</title>
+</head>
+<body>
+
+  <h2>Event Registration Form</h2>
+
+  <form>
+    <label for="fullName">Full Name:</label><br>
+    <input type="text" id="fullName" name="fullName" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="event">Select Event:</label><br>
+    <select id="event" name="event">
+      <option value="music">Music Concert</option>
+      <option value="coding">Coding Competition</option>
+      <option value="sports">Sports Tournament</option>
+    </select><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the Terms & Conditions</label><br><br>
+
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
