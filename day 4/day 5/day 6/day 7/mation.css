@@ -1,0 +1,79 @@
+.container {
+
+    /* height: 250px;
+    width: 250px;
+    background-color: black;
+    animation-name: changeColor;
+    animation-duration: 2s;
+   /* animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+
+    /* width: 80px;
+    height: 80px;
+    background-color: green;
+    animation: spin 2s linear infinite;
+    width: 50px;
+    height: 50px;
+    background: crimson;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 1s ease infinite alternate;*/
+    width: 100px;
+    height: 100px;
+    background: orange;
+    animation: transformBox 3s ease infinite alternate;
+}
+
+* {
+    margin: 150px;
+    padding: 100px;
+}
+
+/*@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+@keyframes bounce {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 200px;
+    }
+}*/
+@keyframes transformBox {
+    0% {
+        transform: translateX(0);
+        background: orange;
+    }
+
+    50% {
+        transform: translateX(200px);
+        background: purple;
+    }
+
+    100% {
+        transform: translateX(0);
+        background: orange;
+    }
+}
+    /*animation-fill-mode: forwards;*/
+
+
+    /*@keyframes changeColor {
+    from {
+        background-color: black;
+        color: white;
+    }
+
+    to {
+        background-color: red;
+        color: black;
+    }
+}*/

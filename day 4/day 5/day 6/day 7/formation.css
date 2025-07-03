@@ -1,0 +1,40 @@
+*{
+    margin: 10;
+    padding: 10;
+}
+.container{
+    width: 200px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container:hover{
+    .bar1{
+        transform: translate(0,130px) rotate(45deg);
+    }
+    .bar2{
+        opacity: 0;
+    }
+    .bar3{
+        transform: translate(0,-130px) rotate(-45deg);
+    }
+}
+.bar1{
+    height: 100px;
+    width: 500px;
+    background-color: blueviolet;
+    transition: all 1s ease;
+}
+.bar2{
+    height: 100px;
+    width: 500px;
+    background-color: blueviolet;
+    transition: all 1s ease;
+}
+.bar3{
+    height: 100px;
+    width: 500px;
+    background-color: blueviolet;
+    transition: all 1s ease;
+}
