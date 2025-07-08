@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Message Submit</title>
+
+</head>
+
+<body>
+
+  <h2>Enter your message:</h2>
+
+  <input type="text" id="messageInput" placeholder="Type your message">
+  <button onclick="showMessage()">Submit</button>
+
+  <div id="output"></div>
+
+  <script>
+    function showMessage() {
+
+      document.getElementById("output").innerHTML =
+        document.getElementById("messageInput").value;
+
+      document.getElementById("messageInput").value = "";
+      
+    }
+  </script>
+
+</body>
+
+</html>
